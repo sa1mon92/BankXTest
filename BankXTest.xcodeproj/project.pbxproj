@@ -9,21 +9,87 @@
 /* Begin PBXBuildFile section */
 		1AF4E6FE292E5FAA00FD1338 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF4E6FD292E5FAA00FD1338 /* AppDelegate.swift */; };
 		1AF4E700292E5FAA00FD1338 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF4E6FF292E5FAA00FD1338 /* SceneDelegate.swift */; };
-		1AF4E702292E5FAA00FD1338 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF4E701292E5FAA00FD1338 /* ViewController.swift */; };
-		1AF4E705292E5FAA00FD1338 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AF4E703292E5FAA00FD1338 /* Main.storyboard */; };
 		1AF4E707292E5FAB00FD1338 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AF4E706292E5FAB00FD1338 /* Assets.xcassets */; };
 		1AF4E70A292E5FAB00FD1338 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AF4E708292E5FAB00FD1338 /* LaunchScreen.storyboard */; };
+		1AF4E71E292E60A300FD1338 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF4E71D292E60A300FD1338 /* AppCoordinator.swift */; };
+		1AF4E721292E612300FD1338 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF4E720292E612300FD1338 /* Coordinator.swift */; };
+		1AF4E726292E61D400FD1338 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF4E725292E61D400FD1338 /* APIManager.swift */; };
+		1AF4E747292E627100FD1338 /* BestTracksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF4E729292E627000FD1338 /* BestTracksViewModel.swift */; };
+		1AF4E748292E627100FD1338 /* BestTracksCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF4E72B292E627000FD1338 /* BestTracksCoordinator.swift */; };
+		1AF4E749292E627100FD1338 /* BestTracksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF4E72D292E627000FD1338 /* BestTracksModel.swift */; };
+		1AF4E74A292E627100FD1338 /* BestTracksViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AF4E72F292E627000FD1338 /* BestTracksViewController.xib */; };
+		1AF4E74B292E627100FD1338 /* TracksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF4E731292E627000FD1338 /* TracksTableViewCell.swift */; };
+		1AF4E74C292E627100FD1338 /* TracksTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AF4E732292E627000FD1338 /* TracksTableViewCell.xib */; };
+		1AF4E74D292E627100FD1338 /* BestTracksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF4E733292E627000FD1338 /* BestTracksViewController.swift */; };
+		1AF4E74E292E627100FD1338 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF4E736292E627000FD1338 /* MainViewModel.swift */; };
+		1AF4E74F292E627100FD1338 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF4E738292E627000FD1338 /* MainCoordinator.swift */; };
+		1AF4E750292E627100FD1338 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AF4E73B292E627000FD1338 /* MainViewController.xib */; };
+		1AF4E751292E627100FD1338 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF4E73C292E627000FD1338 /* MainViewController.swift */; };
+		1AF4E752292E627100FD1338 /* BiographyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF4E73F292E627000FD1338 /* BiographyViewModel.swift */; };
+		1AF4E753292E627100FD1338 /* BiographyCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF4E741292E627000FD1338 /* BiographyCoordinator.swift */; };
+		1AF4E754292E627100FD1338 /* BiographyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF4E743292E627000FD1338 /* BiographyModel.swift */; };
+		1AF4E755292E627100FD1338 /* BiographyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF4E745292E627000FD1338 /* BiographyViewController.swift */; };
+		1AF4E756292E627100FD1338 /* BiographyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AF4E746292E627000FD1338 /* BiographyViewController.xib */; };
+		1AF4E759292E62A500FD1338 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF4E757292E62A500FD1338 /* Constants.swift */; };
+		1AF4E75A292E62A500FD1338 /* StringExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF4E758292E62A500FD1338 /* StringExtention.swift */; };
+		1AF4E768292E62AF00FD1338 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1AF4E75C292E62AF00FD1338 /* Roboto-Medium.ttf */; };
+		1AF4E769292E62AF00FD1338 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1AF4E75D292E62AF00FD1338 /* Roboto-Light.ttf */; };
+		1AF4E76A292E62AF00FD1338 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1AF4E75E292E62AF00FD1338 /* Roboto-Regular.ttf */; };
+		1AF4E76B292E62AF00FD1338 /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1AF4E75F292E62AF00FD1338 /* Roboto-MediumItalic.ttf */; };
+		1AF4E76C292E62AF00FD1338 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1AF4E760292E62AF00FD1338 /* Roboto-ThinItalic.ttf */; };
+		1AF4E76D292E62AF00FD1338 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1AF4E761292E62AF00FD1338 /* Roboto-BoldItalic.ttf */; };
+		1AF4E76E292E62AF00FD1338 /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1AF4E762292E62AF00FD1338 /* Roboto-LightItalic.ttf */; };
+		1AF4E76F292E62AF00FD1338 /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1AF4E763292E62AF00FD1338 /* Roboto-Italic.ttf */; };
+		1AF4E770292E62AF00FD1338 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1AF4E764292E62AF00FD1338 /* Roboto-BlackItalic.ttf */; };
+		1AF4E771292E62AF00FD1338 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1AF4E765292E62AF00FD1338 /* Roboto-Bold.ttf */; };
+		1AF4E772292E62AF00FD1338 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1AF4E766292E62AF00FD1338 /* Roboto-Thin.ttf */; };
+		1AF4E773292E62AF00FD1338 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1AF4E767292E62AF00FD1338 /* Roboto-Black.ttf */; };
+		D5737887623B101F4F463FB5 /* Pods_BankXTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCA9A597119A007978462ADF /* Pods_BankXTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0013F70DEC5CAC0CBBF23CE0 /* Pods-BankXTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankXTest.release.xcconfig"; path = "Target Support Files/Pods-BankXTest/Pods-BankXTest.release.xcconfig"; sourceTree = "<group>"; };
 		1AF4E6FA292E5FAA00FD1338 /* BankXTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankXTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AF4E6FD292E5FAA00FD1338 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1AF4E6FF292E5FAA00FD1338 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1AF4E701292E5FAA00FD1338 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1AF4E704292E5FAA00FD1338 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1AF4E706292E5FAB00FD1338 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1AF4E709292E5FAB00FD1338 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1AF4E70B292E5FAB00FD1338 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AF4E71D292E60A300FD1338 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		1AF4E720292E612300FD1338 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		1AF4E725292E61D400FD1338 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		1AF4E729292E627000FD1338 /* BestTracksViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BestTracksViewModel.swift; sourceTree = "<group>"; };
+		1AF4E72B292E627000FD1338 /* BestTracksCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BestTracksCoordinator.swift; sourceTree = "<group>"; };
+		1AF4E72D292E627000FD1338 /* BestTracksModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BestTracksModel.swift; sourceTree = "<group>"; };
+		1AF4E72F292E627000FD1338 /* BestTracksViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BestTracksViewController.xib; sourceTree = "<group>"; };
+		1AF4E731292E627000FD1338 /* TracksTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TracksTableViewCell.swift; sourceTree = "<group>"; };
+		1AF4E732292E627000FD1338 /* TracksTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TracksTableViewCell.xib; sourceTree = "<group>"; };
+		1AF4E733292E627000FD1338 /* BestTracksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BestTracksViewController.swift; sourceTree = "<group>"; };
+		1AF4E736292E627000FD1338 /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		1AF4E738292E627000FD1338 /* MainCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		1AF4E73B292E627000FD1338 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		1AF4E73C292E627000FD1338 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		1AF4E73F292E627000FD1338 /* BiographyViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BiographyViewModel.swift; sourceTree = "<group>"; };
+		1AF4E741292E627000FD1338 /* BiographyCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BiographyCoordinator.swift; sourceTree = "<group>"; };
+		1AF4E743292E627000FD1338 /* BiographyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BiographyModel.swift; sourceTree = "<group>"; };
+		1AF4E745292E627000FD1338 /* BiographyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BiographyViewController.swift; sourceTree = "<group>"; };
+		1AF4E746292E627000FD1338 /* BiographyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BiographyViewController.xib; sourceTree = "<group>"; };
+		1AF4E757292E62A500FD1338 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1AF4E758292E62A500FD1338 /* StringExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtention.swift; sourceTree = "<group>"; };
+		1AF4E75C292E62AF00FD1338 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		1AF4E75D292E62AF00FD1338 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		1AF4E75E292E62AF00FD1338 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		1AF4E75F292E62AF00FD1338 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		1AF4E760292E62AF00FD1338 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		1AF4E761292E62AF00FD1338 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		1AF4E762292E62AF00FD1338 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		1AF4E763292E62AF00FD1338 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		1AF4E764292E62AF00FD1338 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		1AF4E765292E62AF00FD1338 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		1AF4E766292E62AF00FD1338 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		1AF4E767292E62AF00FD1338 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		7A52472CE07ADBE6A03DE66E /* Pods-BankXTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankXTest.debug.xcconfig"; path = "Target Support Files/Pods-BankXTest/Pods-BankXTest.debug.xcconfig"; sourceTree = "<group>"; };
+		BCA9A597119A007978462ADF /* Pods_BankXTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BankXTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5737887623B101F4F463FB5 /* Pods_BankXTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +109,8 @@
 			children = (
 				1AF4E6FC292E5FAA00FD1338 /* BankXTest */,
 				1AF4E6FB292E5FAA00FD1338 /* Products */,
+				E5314D483A98C41119FFCBD5 /* Pods */,
+				374A5376E6065ED0D518ACFC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +127,213 @@
 			children = (
 				1AF4E6FD292E5FAA00FD1338 /* AppDelegate.swift */,
 				1AF4E6FF292E5FAA00FD1338 /* SceneDelegate.swift */,
-				1AF4E701292E5FAA00FD1338 /* ViewController.swift */,
-				1AF4E703292E5FAA00FD1338 /* Main.storyboard */,
+				1AF4E71D292E60A300FD1338 /* AppCoordinator.swift */,
+				1AF4E727292E627000FD1338 /* BestTracksScene */,
+				1AF4E73D292E627000FD1338 /* BiographyScene */,
+				1AF4E734292E627000FD1338 /* MainScene */,
+				1AF4E724292E61C000FD1338 /* ServiceLayer */,
+				1AF4E71F292E611000FD1338 /* Helpers */,
 				1AF4E706292E5FAB00FD1338 /* Assets.xcassets */,
 				1AF4E708292E5FAB00FD1338 /* LaunchScreen.storyboard */,
 				1AF4E70B292E5FAB00FD1338 /* Info.plist */,
 			);
 			path = BankXTest;
+			sourceTree = "<group>";
+		};
+		1AF4E71F292E611000FD1338 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1AF4E75B292E62AF00FD1338 /* Fonts */,
+				1AF4E720292E612300FD1338 /* Coordinator.swift */,
+				1AF4E757292E62A500FD1338 /* Constants.swift */,
+				1AF4E758292E62A500FD1338 /* StringExtention.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		1AF4E724292E61C000FD1338 /* ServiceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				1AF4E725292E61D400FD1338 /* APIManager.swift */,
+			);
+			path = ServiceLayer;
+			sourceTree = "<group>";
+		};
+		1AF4E727292E627000FD1338 /* BestTracksScene */ = {
+			isa = PBXGroup;
+			children = (
+				1AF4E728292E627000FD1338 /* ViewModel */,
+				1AF4E72A292E627000FD1338 /* Coordinator */,
+				1AF4E72C292E627000FD1338 /* Model */,
+				1AF4E72E292E627000FD1338 /* View */,
+			);
+			path = BestTracksScene;
+			sourceTree = "<group>";
+		};
+		1AF4E728292E627000FD1338 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1AF4E729292E627000FD1338 /* BestTracksViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1AF4E72A292E627000FD1338 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				1AF4E72B292E627000FD1338 /* BestTracksCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		1AF4E72C292E627000FD1338 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1AF4E72D292E627000FD1338 /* BestTracksModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1AF4E72E292E627000FD1338 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1AF4E72F292E627000FD1338 /* BestTracksViewController.xib */,
+				1AF4E730292E627000FD1338 /* TracksTableViewCell */,
+				1AF4E733292E627000FD1338 /* BestTracksViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1AF4E730292E627000FD1338 /* TracksTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				1AF4E731292E627000FD1338 /* TracksTableViewCell.swift */,
+				1AF4E732292E627000FD1338 /* TracksTableViewCell.xib */,
+			);
+			path = TracksTableViewCell;
+			sourceTree = "<group>";
+		};
+		1AF4E734292E627000FD1338 /* MainScene */ = {
+			isa = PBXGroup;
+			children = (
+				1AF4E735292E627000FD1338 /* ViewModel */,
+				1AF4E737292E627000FD1338 /* Coordinator */,
+				1AF4E739292E627000FD1338 /* Model */,
+				1AF4E73A292E627000FD1338 /* View */,
+			);
+			path = MainScene;
+			sourceTree = "<group>";
+		};
+		1AF4E735292E627000FD1338 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1AF4E736292E627000FD1338 /* MainViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1AF4E737292E627000FD1338 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				1AF4E738292E627000FD1338 /* MainCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		1AF4E739292E627000FD1338 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1AF4E73A292E627000FD1338 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1AF4E73B292E627000FD1338 /* MainViewController.xib */,
+				1AF4E73C292E627000FD1338 /* MainViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1AF4E73D292E627000FD1338 /* BiographyScene */ = {
+			isa = PBXGroup;
+			children = (
+				1AF4E73E292E627000FD1338 /* ViewModel */,
+				1AF4E740292E627000FD1338 /* Coordinator */,
+				1AF4E742292E627000FD1338 /* Model */,
+				1AF4E744292E627000FD1338 /* View */,
+			);
+			path = BiographyScene;
+			sourceTree = "<group>";
+		};
+		1AF4E73E292E627000FD1338 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1AF4E73F292E627000FD1338 /* BiographyViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1AF4E740292E627000FD1338 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				1AF4E741292E627000FD1338 /* BiographyCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		1AF4E742292E627000FD1338 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1AF4E743292E627000FD1338 /* BiographyModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1AF4E744292E627000FD1338 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1AF4E745292E627000FD1338 /* BiographyViewController.swift */,
+				1AF4E746292E627000FD1338 /* BiographyViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1AF4E75B292E62AF00FD1338 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1AF4E75C292E62AF00FD1338 /* Roboto-Medium.ttf */,
+				1AF4E75D292E62AF00FD1338 /* Roboto-Light.ttf */,
+				1AF4E75E292E62AF00FD1338 /* Roboto-Regular.ttf */,
+				1AF4E75F292E62AF00FD1338 /* Roboto-MediumItalic.ttf */,
+				1AF4E760292E62AF00FD1338 /* Roboto-ThinItalic.ttf */,
+				1AF4E761292E62AF00FD1338 /* Roboto-BoldItalic.ttf */,
+				1AF4E762292E62AF00FD1338 /* Roboto-LightItalic.ttf */,
+				1AF4E763292E62AF00FD1338 /* Roboto-Italic.ttf */,
+				1AF4E764292E62AF00FD1338 /* Roboto-BlackItalic.ttf */,
+				1AF4E765292E62AF00FD1338 /* Roboto-Bold.ttf */,
+				1AF4E766292E62AF00FD1338 /* Roboto-Thin.ttf */,
+				1AF4E767292E62AF00FD1338 /* Roboto-Black.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		374A5376E6065ED0D518ACFC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCA9A597119A007978462ADF /* Pods_BankXTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E5314D483A98C41119FFCBD5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A52472CE07ADBE6A03DE66E /* Pods-BankXTest.debug.xcconfig */,
+				0013F70DEC5CAC0CBBF23CE0 /* Pods-BankXTest.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +343,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1AF4E70E292E5FAB00FD1338 /* Build configuration list for PBXNativeTarget "BankXTest" */;
 			buildPhases = (
+				DE02E1B878D42EEDB043D334 /* [CP] Check Pods Manifest.lock */,
 				1AF4E6F6292E5FAA00FD1338 /* Sources */,
 				1AF4E6F7292E5FAA00FD1338 /* Frameworks */,
 				1AF4E6F8292E5FAA00FD1338 /* Resources */,
+				B2EFAD7D81DE6CFDADAE91AC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,36 +396,101 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AF4E756292E627100FD1338 /* BiographyViewController.xib in Resources */,
 				1AF4E70A292E5FAB00FD1338 /* LaunchScreen.storyboard in Resources */,
+				1AF4E772292E62AF00FD1338 /* Roboto-Thin.ttf in Resources */,
+				1AF4E74A292E627100FD1338 /* BestTracksViewController.xib in Resources */,
+				1AF4E76C292E62AF00FD1338 /* Roboto-ThinItalic.ttf in Resources */,
+				1AF4E773292E62AF00FD1338 /* Roboto-Black.ttf in Resources */,
+				1AF4E76E292E62AF00FD1338 /* Roboto-LightItalic.ttf in Resources */,
+				1AF4E768292E62AF00FD1338 /* Roboto-Medium.ttf in Resources */,
+				1AF4E750292E627100FD1338 /* MainViewController.xib in Resources */,
+				1AF4E770292E62AF00FD1338 /* Roboto-BlackItalic.ttf in Resources */,
+				1AF4E76D292E62AF00FD1338 /* Roboto-BoldItalic.ttf in Resources */,
 				1AF4E707292E5FAB00FD1338 /* Assets.xcassets in Resources */,
-				1AF4E705292E5FAA00FD1338 /* Main.storyboard in Resources */,
+				1AF4E76B292E62AF00FD1338 /* Roboto-MediumItalic.ttf in Resources */,
+				1AF4E76A292E62AF00FD1338 /* Roboto-Regular.ttf in Resources */,
+				1AF4E76F292E62AF00FD1338 /* Roboto-Italic.ttf in Resources */,
+				1AF4E769292E62AF00FD1338 /* Roboto-Light.ttf in Resources */,
+				1AF4E771292E62AF00FD1338 /* Roboto-Bold.ttf in Resources */,
+				1AF4E74C292E627100FD1338 /* TracksTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B2EFAD7D81DE6CFDADAE91AC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BankXTest/Pods-BankXTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BankXTest/Pods-BankXTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BankXTest/Pods-BankXTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE02E1B878D42EEDB043D334 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BankXTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1AF4E6F6292E5FAA00FD1338 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AF4E702292E5FAA00FD1338 /* ViewController.swift in Sources */,
+				1AF4E747292E627100FD1338 /* BestTracksViewModel.swift in Sources */,
+				1AF4E75A292E62A500FD1338 /* StringExtention.swift in Sources */,
+				1AF4E751292E627100FD1338 /* MainViewController.swift in Sources */,
+				1AF4E74F292E627100FD1338 /* MainCoordinator.swift in Sources */,
+				1AF4E71E292E60A300FD1338 /* AppCoordinator.swift in Sources */,
 				1AF4E6FE292E5FAA00FD1338 /* AppDelegate.swift in Sources */,
+				1AF4E754292E627100FD1338 /* BiographyModel.swift in Sources */,
+				1AF4E726292E61D400FD1338 /* APIManager.swift in Sources */,
 				1AF4E700292E5FAA00FD1338 /* SceneDelegate.swift in Sources */,
+				1AF4E74B292E627100FD1338 /* TracksTableViewCell.swift in Sources */,
+				1AF4E755292E627100FD1338 /* BiographyViewController.swift in Sources */,
+				1AF4E753292E627100FD1338 /* BiographyCoordinator.swift in Sources */,
+				1AF4E752292E627100FD1338 /* BiographyViewModel.swift in Sources */,
+				1AF4E74D292E627100FD1338 /* BestTracksViewController.swift in Sources */,
+				1AF4E721292E612300FD1338 /* Coordinator.swift in Sources */,
+				1AF4E748292E627100FD1338 /* BestTracksCoordinator.swift in Sources */,
+				1AF4E749292E627100FD1338 /* BestTracksModel.swift in Sources */,
+				1AF4E74E292E627100FD1338 /* MainViewModel.swift in Sources */,
+				1AF4E759292E62A500FD1338 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1AF4E703292E5FAA00FD1338 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1AF4E704292E5FAA00FD1338 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1AF4E708292E5FAB00FD1338 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,6 +618,7 @@
 		};
 		1AF4E70F292E5FAB00FD1338 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A52472CE07ADBE6A03DE66E /* Pods-BankXTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -292,9 +629,8 @@
 				INFOPLIST_FILE = BankXTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,14 +638,18 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sadyrev.BankXTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		1AF4E710292E5FAB00FD1338 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0013F70DEC5CAC0CBBF23CE0 /* Pods-BankXTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -320,9 +660,8 @@
 				INFOPLIST_FILE = BankXTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +669,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sadyrev.BankXTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

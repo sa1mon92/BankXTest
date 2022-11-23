@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+        <array key="Roboto-Thin.ttf">
+            <string>Roboto-Thin</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BestTracksViewController" customModule="BankHlynovTest" customModuleProvider="target">
+            <connections>
+                <outlet property="backButton" destination="oRS-a4-I6K" id="lpg-SS-o0S"/>
+                <outlet property="backButtonBottomConstraint" destination="B58-q5-plO" id="qbR-Ev-3Sw"/>
+                <outlet property="notFoundView" destination="CVo-wZ-Xus" id="Fec-fG-rpk"/>
+                <outlet property="searchButton" destination="JfA-GD-x10" id="JIF-tP-BXe"/>
+                <outlet property="searchTextField" destination="Skg-M3-CSg" id="sTe-8X-aE4"/>
+                <outlet property="separatorView" destination="1mr-0L-s2d" id="T2C-l3-0MF"/>
+                <outlet property="tracksTableView" destination="raX-IZ-Vmh" id="LWJ-h0-JXQ"/>
+                <outlet property="tracksView" destination="ncP-A3-hpd" id="9BQ-pY-jGp"/>
+                <outlet property="view" destination="2Wa-AS-ndX" id="eDP-1I-wLp"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="2Wa-AS-ndX">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Лучшие треки" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Tfl-EP-WKg">
+                    <rect key="frame" x="36" y="79" width="321" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Tfl-EP-WKg" secondAttribute="height" multiplier="107:14" id="Ff5-fi-YUi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="36"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uf9-2B-zCq">
+                    <rect key="frame" x="36" y="146" width="321" height="20"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magnifyingglass" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="pZt-R3-ZUo">
+                            <rect key="frame" x="0.0" y="3.6666666666666554" width="15" height="13.333333333333337"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="15" id="BH0-gu-g3e"/>
+                                <constraint firstAttribute="width" constant="15" id="ovf-SR-GiO"/>
+                            </constraints>
+                        </imageView>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Skg-M3-CSg">
+                            <rect key="frame" x="24" y="0.0" width="297" height="20"/>
+                            <fontDescription key="fontDescription" name="Roboto-Thin" family="Roboto" pointSize="15"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="1qq-IK-qsu"/>
+                        <constraint firstItem="pZt-R3-ZUo" firstAttribute="centerY" secondItem="Skg-M3-CSg" secondAttribute="centerY" id="M8c-1D-ppn"/>
+                        <constraint firstItem="Skg-M3-CSg" firstAttribute="top" secondItem="Uf9-2B-zCq" secondAttribute="top" id="MGA-8A-iUC"/>
+                        <constraint firstItem="pZt-R3-ZUo" firstAttribute="leading" secondItem="Uf9-2B-zCq" secondAttribute="leading" id="WAg-gR-35n"/>
+                        <constraint firstItem="Skg-M3-CSg" firstAttribute="leading" secondItem="pZt-R3-ZUo" secondAttribute="trailing" constant="9" id="kkz-Sa-9SC"/>
+                        <constraint firstAttribute="bottom" secondItem="Skg-M3-CSg" secondAttribute="bottom" id="vxl-Vs-or4"/>
+                        <constraint firstAttribute="trailing" secondItem="Skg-M3-CSg" secondAttribute="trailing" id="zvq-T7-AhX"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1mr-0L-s2d">
+                    <rect key="frame" x="36" y="174" width="321" height="1"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Kid-yC-fvW"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JfA-GD-x10">
+                    <rect key="frame" x="102" y="200" width="189" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="t65-z5-eQj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="18"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Искать">
+                        <color key="titleColor" red="0.18823529410000001" green="0.18823529410000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="searchButtonTapped:" destination="-1" eventType="touchUpInside" id="M3X-6H-yTQ"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ncP-A3-hpd">
+                    <rect key="frame" x="36" y="290" width="321" height="423"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="raX-IZ-Vmh">
+                            <rect key="frame" x="0.0" y="0.0" width="321" height="423"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="raX-IZ-Vmh" secondAttribute="bottom" id="2Wb-C5-l1r"/>
+                        <constraint firstAttribute="trailing" secondItem="raX-IZ-Vmh" secondAttribute="trailing" id="9Cp-IK-tZV"/>
+                        <constraint firstItem="raX-IZ-Vmh" firstAttribute="leading" secondItem="ncP-A3-hpd" secondAttribute="leading" id="9z7-sg-9IO"/>
+                        <constraint firstItem="raX-IZ-Vmh" firstAttribute="top" secondItem="ncP-A3-hpd" secondAttribute="top" id="HI6-26-uC0"/>
+                    </constraints>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CVo-wZ-Xus">
+                    <rect key="frame" x="81.666666666666686" y="476.66666666666669" width="230" height="50.000000000000057"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NotFound" translatesAutoresizingMaskIntoConstraints="NO" id="Hdr-gq-qHt">
+                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            <color key="tintColor" red="0.18823529410000001" green="0.18823529410000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="Hdr-gq-qHt" secondAttribute="height" multiplier="1:1" id="aah-Xl-waa"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ничего не найдено!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BO9-93-kUs">
+                            <rect key="frame" x="50" y="0.0" width="180" height="50"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.18823529410000001" green="0.18823529410000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="BO9-93-kUs" secondAttribute="trailing" id="K40-JE-AQa"/>
+                        <constraint firstAttribute="bottom" secondItem="Hdr-gq-qHt" secondAttribute="bottom" id="MCX-Va-V7C"/>
+                        <constraint firstAttribute="width" constant="230" id="RQB-Zy-euk"/>
+                        <constraint firstItem="BO9-93-kUs" firstAttribute="leading" secondItem="Hdr-gq-qHt" secondAttribute="trailing" id="WFU-o2-gc9"/>
+                        <constraint firstAttribute="height" constant="50" id="Yjd-hK-UF0"/>
+                        <constraint firstItem="BO9-93-kUs" firstAttribute="top" secondItem="CVo-wZ-Xus" secondAttribute="top" id="ide-Dc-ep2"/>
+                        <constraint firstItem="Hdr-gq-qHt" firstAttribute="leading" secondItem="CVo-wZ-Xus" secondAttribute="leading" id="pGC-Fz-Egw"/>
+                        <constraint firstItem="Hdr-gq-qHt" firstAttribute="top" secondItem="CVo-wZ-Xus" secondAttribute="top" id="wrT-jF-qWe"/>
+                        <constraint firstAttribute="bottom" secondItem="BO9-93-kUs" secondAttribute="bottom" id="ygy-Mg-sjy"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oRS-a4-I6K">
+                    <rect key="frame" x="119" y="738" width="158" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="dVH-BU-BhP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="18"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Вернуться назад">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="backButtonTapped:" destination="-1" eventType="touchUpInside" id="8Iy-ar-HeP"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="qZA-zR-or1"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="qZA-zR-or1" firstAttribute="trailing" secondItem="oRS-a4-I6K" secondAttribute="trailing" constant="116" id="4BI-TW-5T2"/>
+                <constraint firstItem="CVo-wZ-Xus" firstAttribute="centerX" secondItem="ncP-A3-hpd" secondAttribute="centerX" id="5Xu-Z4-gnA"/>
+                <constraint firstItem="qZA-zR-or1" firstAttribute="trailing" secondItem="Uf9-2B-zCq" secondAttribute="trailing" constant="36" id="6Nv-yt-bG6"/>
+                <constraint firstItem="oRS-a4-I6K" firstAttribute="top" secondItem="ncP-A3-hpd" secondAttribute="bottom" constant="25" id="7uW-rc-Cfk"/>
+                <constraint firstItem="qZA-zR-or1" firstAttribute="bottom" secondItem="oRS-a4-I6K" secondAttribute="bottom" constant="50" id="B58-q5-plO"/>
+                <constraint firstItem="ncP-A3-hpd" firstAttribute="leading" secondItem="qZA-zR-or1" secondAttribute="leading" constant="36" id="GhK-Mp-tAF"/>
+                <constraint firstItem="1mr-0L-s2d" firstAttribute="top" secondItem="Uf9-2B-zCq" secondAttribute="bottom" constant="8" id="R8v-ww-fld"/>
+                <constraint firstItem="1mr-0L-s2d" firstAttribute="leading" secondItem="2Wa-AS-ndX" secondAttribute="leading" constant="36" id="T5e-ec-O8u"/>
+                <constraint firstItem="qZA-zR-or1" firstAttribute="trailing" secondItem="JfA-GD-x10" secondAttribute="trailing" constant="102" id="TzP-Fg-2pw"/>
+                <constraint firstItem="Uf9-2B-zCq" firstAttribute="leading" secondItem="qZA-zR-or1" secondAttribute="leading" constant="36" id="VO5-oI-e6t"/>
+                <constraint firstItem="JfA-GD-x10" firstAttribute="top" secondItem="1mr-0L-s2d" secondAttribute="bottom" constant="25" id="a9c-1O-jdJ"/>
+                <constraint firstItem="CVo-wZ-Xus" firstAttribute="centerY" secondItem="ncP-A3-hpd" secondAttribute="centerY" id="bE3-IR-neW"/>
+                <constraint firstItem="oRS-a4-I6K" firstAttribute="leading" secondItem="qZA-zR-or1" secondAttribute="leading" constant="119" id="bK7-m0-pgl"/>
+                <constraint firstAttribute="trailing" secondItem="1mr-0L-s2d" secondAttribute="trailing" constant="36" id="cDr-rN-uUM"/>
+                <constraint firstItem="Uf9-2B-zCq" firstAttribute="top" secondItem="Tfl-EP-WKg" secondAttribute="bottom" constant="25" id="hDY-he-dQH"/>
+                <constraint firstItem="ncP-A3-hpd" firstAttribute="top" secondItem="JfA-GD-x10" secondAttribute="bottom" constant="35" id="iP1-vt-7pv"/>
+                <constraint firstItem="qZA-zR-or1" firstAttribute="trailing" secondItem="ncP-A3-hpd" secondAttribute="trailing" constant="36" id="mxy-Ft-Sea"/>
+                <constraint firstItem="Tfl-EP-WKg" firstAttribute="leading" secondItem="qZA-zR-or1" secondAttribute="leading" constant="36" id="saP-Dc-FCk"/>
+                <constraint firstItem="JfA-GD-x10" firstAttribute="leading" secondItem="qZA-zR-or1" secondAttribute="leading" constant="102" id="tv8-dW-ur2"/>
+                <constraint firstItem="qZA-zR-or1" firstAttribute="trailing" secondItem="Tfl-EP-WKg" secondAttribute="trailing" constant="36" id="xcn-MO-YJ1"/>
+                <constraint firstItem="Tfl-EP-WKg" firstAttribute="top" secondItem="qZA-zR-or1" secondAttribute="top" constant="20" id="yyG-hq-Ntl"/>
+            </constraints>
+            <point key="canvasLocation" x="-112.21374045801527" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="NotFound" width="200" height="200"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
