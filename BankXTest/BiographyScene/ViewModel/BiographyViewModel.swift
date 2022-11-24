@@ -16,7 +16,12 @@ class BiographyViewModel: ObservableObject {
     private var cancellableSet: Set<AnyCancellable> = []
     
     @Published var artistName: String = ""
-    @Published var biography: BiographyModel?
+    @Published var biography: BiographyModel? {
+        didSet {
+            notFoundHidden = biography == nil ? false : true
+        }
+    }
+    @Published var notFoundHidden: Bool?
     
     init(apiManager: APIManager, coordinator: BiographyCoordinatorProtocol? = nil) {
         self.apiManager = apiManager
@@ -40,6 +45,7 @@ class BiographyViewModel: ObservableObject {
     
     func clear() {
         biography = nil
+        notFoundHidden = true
     }
     
     func didFinish() {

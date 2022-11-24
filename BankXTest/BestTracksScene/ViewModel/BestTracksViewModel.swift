@@ -16,7 +16,12 @@ class BestTracksViewModel {
     private var cancellableSet: Set<AnyCancellable> = []
     
     @Published var artistName: String = ""
-    @Published var bestTracks: BestTracksModel?
+    @Published var bestTracks: BestTracksModel? {
+        didSet {
+            notFoundHidden = bestTracks == nil ? false : true
+        }
+    }
+    @Published var notFoundHidden: Bool?
     
     private var randomTracks = [BestTracksModel.BestTracks.Track]()
     
@@ -57,6 +62,7 @@ class BestTracksViewModel {
     
     func clear() {
         bestTracks = nil
+        notFoundHidden = true
     }
     
     func didFinish() {

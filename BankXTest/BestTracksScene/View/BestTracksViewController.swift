@@ -50,11 +50,16 @@ class BestTracksViewController: UIViewController {
         viewModel.$bestTracks
             .dropFirst(2)
             .receive(on: DispatchQueue.main)
-            .sink { [weak self] bestTracksModel in
-                if bestTracksModel == nil {
-                    self?.notFoundView.isHidden = false
-                }
+            .sink { [weak self] _ in
                 self?.tracksTableView.reloadData()
+            }
+            .store(in: &cancellable)
+        viewModel.$notFoundHidden
+            .dropFirst(2)
+            .receive(on: DispatchQueue.main)
+            .compactMap { $0 }
+            .sink { [weak self] newValue in
+                self?.notFoundView.isHidden = newValue
             }
             .store(in: &cancellable)
     }
@@ -72,7 +77,6 @@ class BestTracksViewController: UIViewController {
     }
     
     @objc private func keyboardWillShow(notification:NSNotification) {
-        notFoundView.isHidden = true
         if keyboardHeight == nil {
             guard let userInfo = notification.userInfo else { return }
             var keyboardFrame:CGRect = (userInfo[UIResponder.keyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
