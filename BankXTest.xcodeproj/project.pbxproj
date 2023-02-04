@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A560938298E91AD0004DFF8 /* RoundedGradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A560937298E91AD0004DFF8 /* RoundedGradientButton.swift */; };
+		1A56093A298E98B70004DFF8 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A560939298E98B70004DFF8 /* GradientView.swift */; };
 		1AF4E6FE292E5FAA00FD1338 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF4E6FD292E5FAA00FD1338 /* AppDelegate.swift */; };
 		1AF4E700292E5FAA00FD1338 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF4E6FF292E5FAA00FD1338 /* SceneDelegate.swift */; };
 		1AF4E707292E5FAB00FD1338 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AF4E706292E5FAB00FD1338 /* Assets.xcassets */; };
@@ -49,6 +51,8 @@
 
 /* Begin PBXFileReference section */
 		0013F70DEC5CAC0CBBF23CE0 /* Pods-BankXTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankXTest.release.xcconfig"; path = "Target Support Files/Pods-BankXTest/Pods-BankXTest.release.xcconfig"; sourceTree = "<group>"; };
+		1A560937298E91AD0004DFF8 /* RoundedGradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedGradientButton.swift; sourceTree = "<group>"; };
+		1A560939298E98B70004DFF8 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		1AF4E6FA292E5FAA00FD1338 /* BankXTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankXTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AF4E6FD292E5FAA00FD1338 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1AF4E6FF292E5FAA00FD1338 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +108,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A560936298E91800004DFF8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1A560937298E91AD0004DFF8 /* RoundedGradientButton.swift */,
+				1A560939298E98B70004DFF8 /* GradientView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		1AF4E6F1292E5FAA00FD1338 = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +156,7 @@
 		1AF4E71F292E611000FD1338 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				1A560936298E91800004DFF8 /* Views */,
 				1AF4E75B292E62AF00FD1338 /* Fonts */,
 				1AF4E720292E612300FD1338 /* Coordinator.swift */,
 				1AF4E757292E62A500FD1338 /* Constants.swift */,
@@ -467,6 +481,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AF4E747292E627100FD1338 /* BestTracksViewModel.swift in Sources */,
+				1A56093A298E98B70004DFF8 /* GradientView.swift in Sources */,
 				1AF4E75A292E62A500FD1338 /* StringExtention.swift in Sources */,
 				1AF4E751292E627100FD1338 /* MainViewController.swift in Sources */,
 				1AF4E74F292E627100FD1338 /* MainCoordinator.swift in Sources */,
@@ -480,6 +495,7 @@
 				1AF4E753292E627100FD1338 /* BiographyCoordinator.swift in Sources */,
 				1AF4E752292E627100FD1338 /* BiographyViewModel.swift in Sources */,
 				1AF4E74D292E627100FD1338 /* BestTracksViewController.swift in Sources */,
+				1A560938298E91AD0004DFF8 /* RoundedGradientButton.swift in Sources */,
 				1AF4E721292E612300FD1338 /* Coordinator.swift in Sources */,
 				1AF4E748292E627100FD1338 /* BestTracksCoordinator.swift in Sources */,
 				1AF4E749292E627100FD1338 /* BestTracksModel.swift in Sources */,
@@ -552,7 +568,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -606,7 +622,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

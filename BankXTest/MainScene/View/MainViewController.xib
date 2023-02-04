@@ -16,7 +16,7 @@
         </array>
     </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="BankHlynovTest" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="BankXTest" customModuleProvider="target">
             <connections>
                 <outlet property="bestTracksButton" destination="cdQ-u7-G6I" id="zZD-Zs-EVh"/>
                 <outlet property="biographyButton" destination="4MU-ZV-hKo" id="mEj-ZW-xQV"/>
@@ -39,11 +39,20 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wYo-FA-DI1">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wYo-FA-DI1" customClass="GradientView" customModule="BankXTest" customModuleProvider="target">
                     <rect key="frame" x="36" y="158.66666666666666" width="303" height="1"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="1" id="Msh-K8-9Ki"/>
                     </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                            <color key="value" red="0.63137254899999995" green="0.54901960780000003" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                            <color key="value" red="0.98431372549999996" green="0.76078431369999999" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="verticalGradient" value="NO"/>
+                    </userDefinedRuntimeAttributes>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сервис позволяет найти лучшие треки исполнителей и показывает биографию." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="eGi-jT-9Bw">
                     <rect key="frame" x="36" y="180.66666666666666" width="303" height="60.666666666666657"/>
@@ -54,7 +63,7 @@
                     <color key="textColor" red="0.4823529411764706" green="0.4823529411764706" blue="0.4823529411764706" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4MU-ZV-hKo">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4MU-ZV-hKo" customClass="RoundedGradientButton" customModule="BankXTest" customModuleProvider="target">
                     <rect key="frame" x="36" y="607" width="303" height="55"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="55" id="QLF-bA-g8H"/>
@@ -64,11 +73,23 @@
                     <state key="normal" title="Биография артиста">
                         <color key="titleColor" red="0.18823529410000001" green="0.18823529410000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="verticalGradient" value="NO"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                            <color key="value" red="0.98431372549019602" green="0.76078431372549016" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                            <color key="value" red="0.65098039215686276" green="0.75686274509803919" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <action selector="biographyButtonTapped:" destination="-1" eventType="touchUpInside" id="rdE-J6-GNC"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdQ-u7-G6I">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdQ-u7-G6I" customClass="RoundedGradientButton" customModule="BankXTest" customModuleProvider="target">
                     <rect key="frame" x="36" y="683" width="303" height="55"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="55" id="ND9-Iu-yr0"/>
@@ -78,6 +99,18 @@
                     <state key="normal" title="Лучшие треки">
                         <color key="titleColor" red="0.18823529411764706" green="0.18823529411764706" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                            <color key="value" red="0.94117647058823528" green="0.57647058823529407" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="verticalGradient" value="NO"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                            <color key="value" red="0.96078431372549022" green="0.31764705882352939" blue="0.42352941176470588" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <action selector="bestTracksButtonTapped:" destination="-1" eventType="touchUpInside" id="Th4-dC-T79"/>
                     </connections>
@@ -112,6 +145,14 @@
             <point key="canvasLocation" x="-112.8" y="19.95073891625616"/>
         </view>
     </objects>
+    <designables>
+        <designable name="4MU-ZV-hKo">
+            <size key="intrinsicContentSize" width="164" height="34"/>
+        </designable>
+        <designable name="cdQ-u7-G6I">
+            <size key="intrinsicContentSize" width="119" height="34"/>
+        </designable>
+    </designables>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

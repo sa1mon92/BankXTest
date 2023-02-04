@@ -11,11 +11,11 @@ import Combine
 class BestTracksViewController: UIViewController {
 
     @IBOutlet weak var searchTextField: UITextField!
-    @IBOutlet weak var separatorView: UIView!
+    @IBOutlet weak var separatorView: GradientView!
     @IBOutlet weak var tracksView: UIView!
     @IBOutlet weak var notFoundView: UIView!
     @IBOutlet weak var tracksTableView: UITableView!
-    @IBOutlet weak var searchButton: UIButton!
+    @IBOutlet weak var searchButton: RoundedGradientButton!
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var backButtonBottomConstraint: NSLayoutConstraint!
     
@@ -38,12 +38,6 @@ class BestTracksViewController: UIViewController {
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         viewModel.didFinish()
-    }
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        setSeparatorGradient()
-        setSearchButton()
     }
     
     private func binding() {
@@ -114,37 +108,6 @@ class BestTracksViewController: UIViewController {
         searchTextField.attributedPlaceholder = NSAttributedString(
             string: "Кого ищем?",
             attributes: [NSAttributedString.Key.foregroundColor: UIColor.black])
-    }
-    
-    private func setSearchButton() {
-        let firstColor =  UIColor(red: 251 / 255, green: 194 / 255, blue: 235 / 255, alpha: 1.0).cgColor
-        let secondColor = UIColor(red: 166 / 255, green: 193 / 255, blue: 238 / 255, alpha: 1.0).cgColor
-                    
-        let gradientLayer = CAGradientLayer()
-        gradientLayer.colors = [firstColor, secondColor]
-        gradientLayer.locations = [0.0, 1.0]
-        gradientLayer.startPoint = CGPoint(x: 0.0, y: 1.0)
-        gradientLayer.endPoint = CGPoint(x: 1.0, y: 1.0)
-        gradientLayer.frame = self.searchButton.bounds
-        self.searchButton.layer.insertSublayer(gradientLayer, at:0)
-        self.searchButton.layer.cornerRadius = 10
-        self.searchButton.clipsToBounds = true
-        self.searchButton.titleLabel?.adjustsFontSizeToFitWidth = true
-        self.searchButton.titleLabel?.minimumScaleFactor = 0.5
-    }
-    
-    private func setSeparatorGradient() {
-        let firstColor =  UIColor(red: 161 / 255, green: 140 / 255, blue: 209 / 255, alpha: 1.0).cgColor
-        let secondColor = UIColor(red: 251 / 255, green: 194 / 255, blue: 235 / 255, alpha: 1.0).cgColor
-                    
-        let gradientLayer = CAGradientLayer()
-        gradientLayer.colors = [firstColor, secondColor]
-        gradientLayer.locations = [0.0, 1.0]
-        gradientLayer.startPoint = CGPoint(x: 0.0, y: 1.0)
-        gradientLayer.endPoint = CGPoint(x: 1.0, y: 1.0)
-        gradientLayer.frame = self.separatorView.bounds
-                
-        self.separatorView.layer.insertSublayer(gradientLayer, at:0)
     }
     
     @IBAction func backButtonTapped(_ sender: UIButton) {
